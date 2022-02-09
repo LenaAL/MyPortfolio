@@ -4,6 +4,9 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import Cv from "./components/Cv";
+import SinglePost from "./components/SinglePost";
+import Post from "./components/Post";
 
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
         <Route path='/' exact element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/project' element={<Project />} />
+        <Route path='/cv' element={<Cv />} />
+        <Route path='/post/:slug' element={<SinglePost />} />
+        <Route path='/post' element={<Post />} />
       </Routes>
     </BrowserRouter>
   )

@@ -10,11 +10,17 @@ export default function NavBar() {
         <header className="bg">
             <div>
                 <nav className="container">
-                    <NavLink to="/" exact className="nav" activeClassname="active">
-                        Home
+                    <NavLink to="/" exact className="logo">
+                        LENA
                     </NavLink>
-                    <NavLink to="/project" className="nav">
+                    <NavLink to="/project" className="nav" activeClassname="active">
                         Projects
+                    </NavLink>
+                    <NavLink to="/post" className="nav">
+                        Blog post
+                    </NavLink>
+                    <NavLink to="/cv" className="nav">
+                        CV
                     </NavLink>
                     <NavLink to="/about" className="nav">
                         About Me

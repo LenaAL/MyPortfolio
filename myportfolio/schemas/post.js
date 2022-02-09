@@ -1,4 +1,4 @@
-export default {
+export default { /* can add things here that is in sanity studio */
   name: 'post',
   title: 'Post',
   type: 'document',
