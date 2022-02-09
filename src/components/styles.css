@@ -83,7 +83,7 @@
 /*Reflection/blog page*/
 
 .mainPost {
-    padding: 12px;
+    padding: 20px;
 }
 
 .containerPost {
@@ -98,9 +98,11 @@
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
+    text-shadow: rgb(134, 188, 233) 2px 6px 9px;
 }
 
 .PostText2 {
+
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -124,6 +126,7 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
 
 }
 
@@ -131,8 +134,6 @@
     border-radius: 20px;
     box-shadow: rgb(160, 213, 235) 2px 6px 9px;
     background-color: rgb(16, 148, 255);
-
-
 }
 
 .postTitle {
