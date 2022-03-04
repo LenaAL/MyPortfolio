@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { GiRabbitHead } from "react-icons/gi";
 import './styles.css';
 
 
@@ -11,13 +12,13 @@ export default function NavBar() {
             <div>
                 <nav className="container">
                     <NavLink to="/" exact className="logo">
-                        LENA
+                        <GiRabbitHead /> LENA
                     </NavLink>
                     <NavLink to="/project" className="nav" activeClassname="active">
                         Projects
                     </NavLink>
                     <NavLink to="/post" className="nav">
-                        Blog post
+                        Reflections
                     </NavLink>
                     <NavLink to="/cv" className="nav">
                         CV
