@@ -5,6 +5,7 @@
     padding: 40px;
     text-align: center;
     box-shadow: rgb(160, 213, 235) 2px 6px 9px;
+
 }
 
 .container {
@@ -23,13 +24,11 @@
 }
 
 .nav {
-    display: inline-flex;
     color: black;
     font-size: 20px;
     font-family: Arial,
         Helvetica,
         sans-serif;
-    margin-top: 9px;
     text-decoration: none;
 }
 
@@ -82,7 +81,7 @@
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 20%;
 }
 
 
@@ -269,7 +268,11 @@
     background-color: rgb(255, 255, 255);
     box-shadow: rgb(160, 213, 235) 2px 6px 9px;
     border-radius: 1px;
-    margin: 0 3%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 60%;
+    padding: 10px;
 }
 
 .singlePHeader {
@@ -414,8 +417,48 @@
     width: 100%;
     bottom: 0;
     margin-top: 10px;
-    width: 100%;
     background-color: rgb(134, 188, 233);
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+
+/* About me page */
+
+.about {
+    position: relative;
+}
+
+.about h1 {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.i {
+    padding: 40px 40px;
+    position: relative;
+}
+
+.me {
+    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
+}
+
+
+.aboutBg {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(134, 188, 233);
+    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.aboutText {
+    margin-left: 30px;
+}
+
+.aboutText h2 span {
+    color: rgb(66, 87, 97);
+    text-decoration: underline;
 }

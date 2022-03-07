@@ -7,6 +7,7 @@ import './styles.css';
 
 
 export default function NavBar() {
+
     return (
         <header className="bg">
             <div>
