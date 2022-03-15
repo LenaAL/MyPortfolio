@@ -3,7 +3,9 @@ import { useParams } from "react-router-dom";
 import SanityClient from "../client.js";
 /*import { ImageUrlBuilder } from "@sanity/image-url";*/
 import { AiOutlineLoading } from "react-icons/ai";
+import { FaArrowLeft } from "react-icons/fa";
 import BlockContent from "@sanity/block-content-to-react";
+import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 
 /*const builder = ImageUrlBuilder(SanityClient);
@@ -15,6 +17,9 @@ export default function SinglePost() {
 
     const [SinglePost, SetSinglePost] = useState(null);
     const { slug } = useParams();
+
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         SanityClient.fetch(`*[slug.current == "${slug}"] {
@@ -41,7 +46,7 @@ export default function SinglePost() {
     return <>
         <main className="singlePContainer">
             <article className="singePArticle">
-                <header className="singlePHeader">
+                <header>
                     <div className="singlePitem">
                         <div className="titleCard">
                             <h1 className="singleTitle">{SinglePost.title}</h1>
@@ -53,6 +58,7 @@ export default function SinglePost() {
                 </header>
             </article>
         </main>
+        <div onClick={() => navigate(-1)} className="backBtn"><FaArrowLeft /></div>
         <article className="blockContainer">
             <div className="blockContent"><BlockContent blocks={SinglePost.body} projectId="zzsf9mdk" dataset="production" /></div>
         </article>

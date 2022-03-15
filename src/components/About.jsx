@@ -25,7 +25,7 @@ export default function About() {
     return <>
         <main className="about">
             <h1>About me</h1>
-            <div className="i">
+            <div className="wrapper">
                 <section className="aboutBg">
                     <img className="me" src={image} />
                     <div className="aboutText">

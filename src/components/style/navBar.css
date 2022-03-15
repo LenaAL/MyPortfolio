@@ -1,0 +1,107 @@
+.bg {
+    background-image: linear-gradient(to left, rgba(207, 190, 218, 0.733), rgba(58, 142, 238, 0.555));
+    padding: 40px;
+    text-align: center;
+    box-shadow: rgb(160, 213, 235) 2px 6px 9px;
+
+}
+
+
+.list {
+    display: flex;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: inline-flex;
+    color: rgb(9, 23, 104);
+    font-size: 30px;
+    font-family: fantasy, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.navBar {
+    color: black;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: width ease .6s;
+}
+
+.navBar:hover {
+    text-shadow: rgb(229, 236, 244) 2px 6px 9px;
+    color: white;
+}
+
+.active {
+    color: white;
+    text-shadow: rgb(134, 188, 233) 2px 6px 9px;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    text-align: left;
+    right: 10px;
+    padding: 10px;
+    color: black;
+    background-color: rgba(207, 190, 218, 0);
+    font-size: 38px;
+    border: none;
+}
+
+.burger:Active {
+    font-size: 36px;
+}
+
+/*Media queries*/
+
+
+
+/*phone*/
+@media screen and (max-width: 637px) {
+
+
+    .list {
+        margin-top: 5px;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .navBar:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    .navBar {
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 100% !important;
+        padding: 15px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+

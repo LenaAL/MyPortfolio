@@ -30,16 +30,16 @@ export default function Post() {
         <>
             <main className="mainPost">
                 <h1 className="PostText">Reflectations</h1>
-                <h2 className="PostText2">Here i will post my thoughts and reflectations on the projects I have made</h2>
+                {/*<h2 className="PostText2">If you want to see the reflections I'v had on my work, you came to the right place! </h2>*/}
                 <section className="containerPost">
                     <div className="postGrid">
                         {post && post.map((post, index) => (
-                            <article>
+                            <article className="box">
                                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                                     <span className="cards" key={index}>
                                         <img src={post.mainImage.asset.url}
                                             alt={post.mainImage.alt}
-                                            width="420px" height="400px" />
+                                            width="470px" height="400px" />
                                         <span className="postTitle">
                                             <h3 className="postText3">{post.title}</h3>
                                         </span>
@@ -51,7 +51,7 @@ export default function Post() {
                     </div>
                 </section>
             </main>
-            <Footer></Footer>
+            <Footer />
         </>
     )
 };

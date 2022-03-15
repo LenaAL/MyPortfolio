@@ -1,0 +1,160 @@
+.img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    background-color: black;
+    overflow: hidden !important;
+}
+
+
+/*vil ha en boks rund dem 3 tingern */
+.bgContainer h1,
+.bgContainer h2 {
+    padding-left: 5%;
+    width: fit-content;
+    overflow: hidden !important;
+}
+
+.text {
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.904);
+    /* -webkit-text-fill-color: rgba(134, 188, 233, 0.527);
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.733);
+    -webkit-text-stroke-width: 0.2px;
+    */
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: absolute;
+
+
+}
+
+.undertext {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 5.5em;
+}
+
+
+.projectBtn {
+    position: absolute;
+    top: 11em;
+    left: 10%;
+    align-self: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(134, 188, 233, 0.76);
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: rgb(174, 190, 197) 2px 6px 20px;
+}
+
+.reflectBtn {
+    position: absolute;
+    top: 17em;
+    left: 10%;
+    align-self: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(134, 188, 233, 0.76);
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: rgb(174, 190, 197) 2px 6px 20px;
+}
+
+.aboutBtn {
+    position: absolute;
+    top: 14em;
+    left: 10%;
+    align-self: center;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(134, 188, 233, 0.76);
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: rgb(174, 190, 197) 2px 6px 20px;
+}
+
+.projectBtn span,
+.reflectBtn span,
+.aboutBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.projectBtn span:after,
+.reflectBtn span:after,
+.aboutBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+
+.projectBtn:hover span,
+.reflectBtn:hover span,
+.aboutBtn:hover span {
+    padding-right: 35px;
+}
+
+.projectBtn:hover span:after,
+.reflectBtn:hover span:after,
+.aboutBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+@media screen and (max-width: 740px) {
+
+    .undertext {
+        top: 10em;
+    }
+
+    .projectBtn,
+    .reflectBtn,
+    .aboutBtn {
+
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .undertext {
+        top: 17em;
+    }
+
+    .projectBtn,
+    .reflectBtn,
+    .aboutBtn {
+
+        display: none;
+    }
+}

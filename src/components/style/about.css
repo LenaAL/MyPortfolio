@@ -1,0 +1,131 @@
+.about {
+    position: relative;
+}
+
+
+.about h1 {
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif
+}
+
+.wrapper {
+    padding: 40px 40px;
+    padding-right: 4em;
+    position: relative;
+}
+
+.me {
+    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.me:hover {
+    filter: grayscale(1);
+}
+
+
+.aboutBg {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.733), rgba(188, 210, 219, 0.555));
+    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    padding: 1em;
+}
+
+.aboutText {
+    margin-left: 6em;
+}
+
+.aboutText h2 span {
+    color: rgb(66, 87, 97);
+    text-decoration: underline;
+}
+
+.aboutBlockContent {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width:2000px) {
+
+
+    .aboutBg {
+        padding-bottom: 1em;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1346px) {
+    .aboutBg {
+        text-align: left;
+        margin-bottom: 9em;
+    }
+
+    .me {
+        margin-top: .1em;
+        height: 400px;
+        text-align: left;
+
+    }
+
+    .aboutText {
+        margin-left: 4em;
+    }
+}
+
+@media screen and (max-width:1045px) {
+
+    .aboutBg {
+        display: block;
+        padding-bottom: 5em;
+        padding-left: 10px;
+        width: 71%;
+    }
+
+    .me {
+        padding: auto;
+        margin: auto;
+        width: auto;
+        height: auto;
+
+    }
+
+    .aboutText {
+        margin-left: 2em;
+    }
+
+    .about h1 {
+        margin-top: 1.5em;
+    }
+
+}
+
+
+
+@media screen and (max-width:799px) {
+    .aboutBg {
+        width: 100% !important;
+        display: block;
+        padding-left: 1em;
+    }
+
+    .me {
+        margin-top: .2em;
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .aboutText {
+        margin-left: 2em;
+    }
+
+    .about h1 {
+        margin-top: 1.5em;
+    }
+
+}
