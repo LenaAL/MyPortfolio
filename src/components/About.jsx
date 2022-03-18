@@ -29,7 +29,7 @@ export default function About() {
                 <section className="aboutBg">
                     <img className="me" src={image} />
                     <div className="aboutText">
-                        <h2><span>I'm a frontend developer</span></h2>
+                        <h2><span>Hi I'm Lena Amdal-Larsen</span></h2>
                         <div className="aboutBlockContent">
                             <BlockContent blocks={author.bio} projectId="zzsf9mdk" dataset="production" />
                         </div>

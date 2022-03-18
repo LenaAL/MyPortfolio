@@ -3,9 +3,10 @@ import { NavLink } from "react-router-dom";
 import image from '../img/albussommer 015.JPG';
 
 
+
 export default function Home() {
     return (
-        <main classname="homeBg"> <img src={image} alt="Albus the bunny" className="img" />
+        <main className="homeBg"> <img src={image} alt="Albus the bunny" className="img" />
             <div className="bgContainer">
                 <h1 className="text">Hi! I'm Lena Amdal-Larsen</h1>
                 <h2 className="undertext">Developer, Animal Lover, Sport Enthusiast and Gamer</h2>

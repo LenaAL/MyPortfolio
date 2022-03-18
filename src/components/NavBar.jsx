@@ -3,12 +3,7 @@ import { NavLink } from "react-router-dom";
 import { GiRabbitHead } from "react-icons/gi";
 import { FaBars } from "react-icons/fa";
 import './style/navBar.css';
-import './style/home.css';
-import './style/post.css';
-import './style/singlePost.css';
-import './style/project.css';
-import './style/about.css';
-import './style/footer.css';
+
 
 
 
@@ -43,7 +38,7 @@ export default function NavBar() {
                         <NavLink to="/" exact className="logo">
                             <GiRabbitHead />LENA
                         </NavLink>
-                        <NavLink to="/project" className="navBar" activeClassname="active">
+                        <NavLink to="/project" className="navBar" active Classname="active">
                             Projects
                         </NavLink>
                         <NavLink to="/post" className="navBar">

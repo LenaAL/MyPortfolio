@@ -1,5 +1,6 @@
 .about {
     position: relative;
+    padding-top: 11vh !important;
 }
 
 
@@ -32,7 +33,7 @@
     box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 80%;
     padding: 1em;
 }
 
@@ -41,13 +42,15 @@
 }
 
 .aboutText h2 span {
-    color: rgb(66, 87, 97);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
 }
 
 .aboutBlockContent {
     text-align: left;
     word-wrap: break-word;
+    margin-right: 4em;
+    font-size: 20px;
 }
 
 @media screen and (max-width:2000px) {
@@ -124,8 +127,6 @@
         margin-left: 2em;
     }
 
-    .about h1 {
-        margin-top: 1.5em;
-    }
+    .about h1 {}
 
 }

@@ -1,30 +1,37 @@
 import React, { useState, useEffect } from "react";
-import SanityClient from "../client.js";
-import { FaLongArrowAltRight }
-    from "react-icons/fa";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import SanityClient from "../client.js";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { AiOutlineLoading } from "react-icons/ai";
 import Footer from "./Footer";
 
 
 export default function Project() {
 
-    const [project,
-        setProject] = useState(null);
+    const [project, setProject] = useState(null);
+
 
     useEffect(() => {
         SanityClient.fetch(`*[_type=="project"] {
                     title,
+                    slug,
                     date,
                     place,
                     description,
                     projectType,
                     link,
-                    tags
+                    tags,
+                
+                    
+
                 }
 
                 `).then((data) => setProject(data))
             .catch(console.error);
     }, []);
+
+    if (!project) return <div><AiOutlineLoading /> Loading...</div>
 
     return <>
         <main className="mainProjectContainer">
@@ -38,13 +45,23 @@ export default function Project() {
                         </span>
                             <p className="description"> {project.description}
                             </p>
-                            <p> <a href={project.link} target="_blank" rel="noopener noreferrer" className="link"> <span role="img" aria-label="right pointing arrow"><FaLongArrowAltRight /> </span> <strong>View Project</strong> {""}
-                            </a> </p>
+                            <div className="linkContainer">
+                                <p> <a href={project.link} target="_blank" rel="noopener noreferrer" className="link"> <span role="img" aria-label="right pointing arrow"><FaLongArrowAltRight />
+                                </span>
+                                    <strong>View Project</strong> {""}
+                                </a></p>
+                                <p>
+                                    <span id="blue" role="img" aria-label="right pointing arrow"><FaLongArrowAltRight />
+                                    </span>
+                                    <Link className="link" to={"/post/"}><strong>Read reflectation</strong></Link>
+                                </p>
+                            </div>
                         </div>
                     </article>))
                 }
                 </section>
             </section>
         </main>
-        <Footer /> </>
+        <Footer />
+    </>
 }

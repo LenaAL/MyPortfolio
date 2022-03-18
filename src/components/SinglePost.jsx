@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import SanityClient from "../client.js";
-/*import { ImageUrlBuilder } from "@sanity/image-url";*/
 import { AiOutlineLoading } from "react-icons/ai";
 import { FaArrowLeft } from "react-icons/fa";
 import BlockContent from "@sanity/block-content-to-react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 
-/*const builder = ImageUrlBuilder(SanityClient);
-function urlFor(source) {
-    return builder.image(source)
-}*/
 
 export default function SinglePost() {
 
@@ -34,7 +29,7 @@ export default function SinglePost() {
             },
             body,
             "name": author->name,
-            "authorImage": atuthor->image
+
         }`
         )
             .then((data) => SetSinglePost(data[0]))
@@ -57,11 +52,12 @@ export default function SinglePost() {
                     </div>
                 </header>
             </article>
+            <div onClick={() => navigate(-1)} className="backBtn"><FaArrowLeft /></div>
+            <article className="blockContainer">
+                <div className="blockContent"><BlockContent blocks={SinglePost.body} projectId="zzsf9mdk" dataset="production" /></div>
+            </article>
         </main>
-        <div onClick={() => navigate(-1)} className="backBtn"><FaArrowLeft /></div>
-        <article className="blockContainer">
-            <div className="blockContent"><BlockContent blocks={SinglePost.body} projectId="zzsf9mdk" dataset="production" /></div>
-        </article>
+
 
         <Footer />
     </>

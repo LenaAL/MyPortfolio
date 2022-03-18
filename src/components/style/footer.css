@@ -4,9 +4,15 @@
     box-shadow: rgb(160, 213, 235) 2px -6px 9px;
     color: rgb(0, 0, 0);
     text-align: left;
-
 }
 
+.footerText a {
+    color: black
+}
+
+.footerText a:hover {
+    font-size: 17px;
+}
 
 .footer div {
     padding: 2em;
@@ -22,8 +28,20 @@
     text-align: right;
 }
 
+.footerText p {
+    font-weight: bold;
+}
+
+.footerIcon {
+    font-size: 20px;
+}
+
 @media screen and (max-width: 430px) {
     .footer div {
         grid-template-columns: 1fr;
+    }
+
+    .footer div div:last-child {
+        text-align: center;
     }
 }

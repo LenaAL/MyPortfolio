@@ -5,10 +5,10 @@ export default function Footer() {
     return <> <footer className="footer">
         <div className="footerText">
             <div> <strong>Contact me:</strong>
-                <p><FaRegEnvelope /> <a href="mailto: Lenaamdallarsen@gmail.com">Lenaamdallarsen@gmail.com</a></p>
-                <p><FaDiscord /> Ecentrah#7213</p>
-                <p><FaLinkedin /> If i had one lol </p>
-                <p><FaTwitter /> @xLenaAL</p>
+                <p><span className="footerIcon"><FaRegEnvelope /></span> <a href="mailto: Lenaamdallarsen@gmail.com">Lenaamdallarsen@gmail.com</a></p>
+                <p><span className="footerIcon"><FaDiscord /></span> Ecentrah#7213</p>
+                <p><span className="footerIcon"><FaLinkedin /></span> <a href="https://www.linkedin.com/in/lena-amdal-larsen-240b08234/">Lena Amdal-Larsen</a></p>
+                <p><span className="footerIcon"><FaTwitter /></span> @xLenaAL</p>
             </div>
             <div><strong>Made with React and Sanity.io</strong>
             </div>

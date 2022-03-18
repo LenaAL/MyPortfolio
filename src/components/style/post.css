@@ -1,23 +1,36 @@
 .mainPost {
-    padding: 2em;
-    margin-bottom: 35em;
+    margin: auto;
+}
+
+.cardImgContainer {
+    width: 550px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.cardImgContainer:hover {
+    box-shadow: rgb(107, 175, 238) 2px 6px 20px;
+}
+
+.cardsImg {
+    height: 100%;
 }
 
 .containerPost {
 
     width: 100%;
-    height: 50px;
+    height: fit-content;
+    margin: auto;
     margin-top: 0;
-
-
+    padding: 0;
 }
 
 .PostText {
     font-size: 30px;
-    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif
 }
 
 .PostText2 {
@@ -30,49 +43,49 @@
 }
 
 .postText3 {
+    text-decoration: none !important;
     font-size: large;
     font-weight: bold;
     color: white;
-    text-decoration: none !important;
     margin: auto;
-    margin-left: 50%;
-    padding: 7px 6px;
-    background-color: rgba(10, 16, 17, 0.74);
+    padding: 1em 2em;
+    background-color: rgba(10, 16, 17, 0.938);
     border-radius: 5px;
 }
 
 .postGrid {
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 5rem;
     grid-template-columns: 1fr 1fr 1fr;
     width: fit-content;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 1rem;
+    margin: auto;
+    margin-top: 5rem;
 
 
 }
 
 .cards {
+    position: relative;
     border-radius: 10px;
-    box-shadow: rgb(160, 213, 235) 2px 6px 9px;
-    background-color: rgb(0, 183, 255);
-    margin-left: 10%;
+    margin-left: 1em;
+    width: fit-content;
+    height: fit-content;
 
 
 }
 
 .postTitle {
-    position: relative;
-    justify-self: center;
-    text-align: start;
-    bottom: 20%;
-    left: 10%;
+    position: absolute;
+    right: 0em;
+    bottom: 0;
+    width: 100%;
 }
 
-@media screen and (max-width: 1700px) {
+
+@media screen and (max-width: 1900px) {
 
     .postGrid {
-        display: grid;
         grid-template-columns: 1fr 1fr;
 
     }
@@ -80,50 +93,45 @@
 
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1300px) {
+    main {
+        min-height: 100vh !important;
+    }
 
     .postGrid {
-        display: grid;
-        grid-gap: 0;
         grid-template-columns: 1fr;
-        margin-top: 2em;
-
+        margin-bottom: 1rem;
 
     }
 
-    .PostText {
-        margin-left: 3.5em;
-    }
-
-    .mainPost {
-        display: inline-block;
-        margin: auto;
-        margin-bottom: 35em;
-    }
-}
-
-@media screen and (max-width: 623px) {
-
-    .mainPost {
-        padding: .1em;
-        margin-left: auto;
-    }
-
-    img {
-        width: 21em;
-        height: 20em;
-        padding-right: .1em !important;
+    .cardImgContainer {
+        width: 80vw;
+        height: 60vw;
     }
 
     .postText3 {
-        font-size: large;
-        font-weight: bold;
-        color: white;
-        text-decoration: none !important;
         margin: auto;
-        margin-left: 30%;
-        margin-right: 4em;
-        padding: .3em .1em;
-        margin-bottom: 3em;
+        font-size: larger;
+        padding-right: 1em;
     }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .cardImgContainer {
+        width: 90vw;
+        height: 60vw;
+    }
+
+    .postGrid {
+        grid-gap: 2em;
+    }
+
+    .postText3 {
+        font-size: 16px;
+
+    }
+
+
 }

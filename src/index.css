@@ -20,4 +20,8 @@ code {
 
 main {
   position: relative;
+  min-height: 90vh;
+  padding: 0;
+  padding-top: 200px !important;
+  box-sizing: border-box;
 }

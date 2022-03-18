@@ -36,14 +36,17 @@ export default function Post() {
                         {post && post.map((post, index) => (
                             <article className="box">
                                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-                                    <span className="cards" key={index}>
-                                        <img src={post.mainImage.asset.url}
-                                            alt={post.mainImage.alt}
-                                            width="470px" height="400px" />
+                                    <div className="cards" key={index}>
+                                        <div className="cardImgContainer">
+                                            <img src={post.mainImage.asset.url}
+                                                alt={post.mainImage.alt}
+                                                className="cardsImg"
+                                            />
+                                        </div>
                                         <span className="postTitle">
                                             <h3 className="postText3">{post.title}</h3>
                                         </span>
-                                    </span>
+                                    </div>
 
                                 </Link>
                             </article>
