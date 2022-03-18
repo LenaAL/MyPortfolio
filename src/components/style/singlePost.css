@@ -93,4 +93,9 @@
         padding-top: 8vh !important;
     }
 
+    .blockContent p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
 }
