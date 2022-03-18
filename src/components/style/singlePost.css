@@ -88,7 +88,7 @@
     color: rgba(58, 142, 238, 0.555);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1000px) {
     .singlePContainer {
         padding-top: 8vh !important;
     }
@@ -97,5 +97,19 @@
         padding-left: 1em;
         padding-right: 1em;
     }
+
+    .singlePContainer {
+        /*border: 1px solid rgb(134, 188, 233);*/
+        padding-top: 11vh !important;
+    }
+
+    .blockContent h3 {
+        padding-left: .9em;
+    }
+
+    .blockContainer {
+        width: 90%;
+    }
+
 
 }
