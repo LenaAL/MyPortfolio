@@ -26,9 +26,23 @@
     padding: 0;
 }
 
+
+#quoteR {
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
+    margin-left: 15em;
+
+}
+
+#indentR {
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
+    margin-left: 31em;
+
+
+}
+
 .PostText {
     font-size: 30px;
-    display: flex;
+    text-align: center;
     justify-content: center;
     font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif
 }
@@ -87,6 +101,20 @@
 
     .postGrid {
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 5em;
+
+    }
+
+
+    #quoteR {
+
+        margin-left: 20em;
+
+    }
+
+    #indentR {
+
+        margin-left: 37em;
 
     }
 
@@ -100,13 +128,13 @@
 
     .postGrid {
         grid-template-columns: 1fr;
-        margin-bottom: 1rem;
+
 
     }
 
     .cardImgContainer {
-        width: 80vw;
-        height: 60vw;
+        width: 60vw;
+        height: 40vw;
     }
 
     .postText3 {
@@ -115,13 +143,49 @@
         padding-right: 1em;
     }
 
+    #quoteR {
+
+        margin-left: 13em;
+
+    }
+
+    #indentR {
+
+        margin-left: 29em;
+
+    }
+
+
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+
+    #quoteR {
+        margin-left: 10em;
+    }
+
+    #indentR {
+        margin-left: 24em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #quoteR {
+        margin-left: 9em;
+    }
+
+    #indentR {
+        margin-left: 20em;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .cardImgContainer {
-        width: 90vw;
+        width: 80vw;
         height: 60vw;
+        text-align: center;
     }
 
     .postGrid {
@@ -133,5 +197,24 @@
 
     }
 
+    #quoteR {
+        margin-left: 4em;
+    }
 
+    #indentR {
+        margin-left: 20em;
+    }
+
+
+}
+
+@media screen and (max-width: 630px) {
+
+    #quoteR {
+        margin-left: 3em;
+    }
+
+    #indentR {
+        margin-left: 6em;
+    }
 }

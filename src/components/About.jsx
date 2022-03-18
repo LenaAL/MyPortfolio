@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import Footer from "./Footer";
 import { AiOutlineLoading } from "react-icons/ai";
+import { GiRabbitHead } from "react-icons/gi";
 import BlockContent from "@sanity/block-content-to-react";
 import image from '../img/AboutPic.jpg'
 
@@ -25,6 +26,8 @@ export default function About() {
     return <>
         <main className="about">
             <h1>About me</h1>
+            <h3 id="quoteA">Want to know me? </h3>
+            <h3 id="indentA">just keep reading <span className="quoteBunny"><GiRabbitHead /></span></h3>
             <div className="wrapper">
                 <section className="aboutBg">
                     <img className="me" src={image} />

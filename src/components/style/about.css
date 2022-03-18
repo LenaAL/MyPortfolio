@@ -6,11 +6,27 @@
 
 .about h1 {
     text-align: center;
-    margin-top: 3%;
-    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif
+    margin-top: 1em;
+    padding-bottom: 20px;
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
+}
+
+#quoteA {
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
+    margin-left: 12.5em;
+}
+
+#indentA {
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
+    margin-left: 17em;
+}
+
+.quoteBunny {
+    font-size: 1.3em;
 }
 
 .wrapper {
+    margin-top: 5em;
     padding: 40px 40px;
     padding-right: 4em;
     position: relative;
@@ -18,8 +34,8 @@
 
 .me {
     box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
-    max-width: 100%;
-    height: auto;
+    width: 500px;
+    height: 450px;
 
 }
 
@@ -38,19 +54,21 @@
 }
 
 .aboutText {
-    margin-left: 6em;
+    margin-left: 4em;
 }
 
 .aboutText h2 span {
     color: rgb(0, 0, 0);
-    text-decoration: underline;
+    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
+
 }
 
 .aboutBlockContent {
     text-align: left;
     word-wrap: break-word;
-    margin-right: 4em;
-    font-size: 20px;
+    font-size: 17px;
+
+
 }
 
 @media screen and (max-width:2000px) {
@@ -59,6 +77,14 @@
     .aboutBg {
         padding-bottom: 1em;
         width: 100%;
+    }
+
+    #quoteA {
+        margin-left: 3em;
+    }
+
+    #indentA {
+        margin-left: 7em;
     }
 }
 
@@ -76,7 +102,15 @@
     }
 
     .aboutText {
-        margin-left: 4em;
+        margin-left: 3em;
+    }
+
+    #quoteA {
+        margin-left: 3.5em;
+    }
+
+    #indentA {
+        margin-left: 7em;
     }
 }
 
@@ -85,24 +119,35 @@
     .aboutBg {
         display: block;
         padding-bottom: 5em;
-        padding-left: 10px;
-        width: 71%;
+
+        width: 80%;
+        text-align: center;
+
     }
 
     .me {
-        padding: auto;
-        margin: auto;
-        width: auto;
-        height: auto;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 100%;
+        border: 2px solid rgba(58, 142, 238, 0.555);
 
     }
 
     .aboutText {
-        margin-left: 2em;
+        margin-left: 1em;
     }
 
     .about h1 {
         margin-top: 1.5em;
+    }
+
+    #quoteA {
+        margin-left: 5.5em;
+    }
+
+    #indentA {
+        margin-left: 9em;
     }
 
 }
@@ -112,21 +157,32 @@
 @media screen and (max-width:799px) {
     .aboutBg {
         width: 100% !important;
-        display: block;
-        padding-left: 1em;
+        padding-left: .5em;
+        overflow: hidden;
+
     }
 
     .me {
+        margin-left: 1px;
         margin-top: .2em;
         max-width: 100%;
         height: auto;
 
+
     }
 
     .aboutText {
+        margin-left: .5em;
+
+    }
+
+    #quoteA {
         margin-left: 2em;
     }
 
-    .about h1 {}
+    #indentA {
+        margin-left: 6em;
+    }
+
 
 }
