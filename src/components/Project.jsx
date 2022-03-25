@@ -23,9 +23,6 @@ export default function Project() {
                     projectType,
                     link,
                     tags,
-                
-                    
-
                 }
 
                 `).then((data) => setProject(data))

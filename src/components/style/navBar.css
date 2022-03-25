@@ -1,7 +1,7 @@
 .bg {
     background-color: white;
     background-image: linear-gradient(to left, rgba(207, 190, 218, 0.733), rgba(58, 142, 238, 0.555));
-    padding: 3em;
+    padding: 2.5em;
     text-align: center;
     box-shadow: rgb(160, 213, 235) 2px 6px 9px;
     position: fixed;
@@ -71,9 +71,6 @@
 
 /*Media queries*/
 
-
-
-/*phone*/
 @media screen and (max-width: 637px) {
 
 

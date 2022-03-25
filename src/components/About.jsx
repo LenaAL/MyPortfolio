@@ -13,8 +13,7 @@ export default function About() {
     useEffect(() => {
         sanityClient.fetch(`*[_type == "author"] {
             name,
-            bio,
-            "authorImage": image.asset->url
+            bio
         }`
         )
             .then((data) => setAuthor(data[0]))

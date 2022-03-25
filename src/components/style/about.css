@@ -3,6 +3,15 @@
     padding-top: 11vh !important;
 }
 
+.aboutBg {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.733), rgba(188, 210, 219, 0.555));
+    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
+    display: flex;
+    margin: auto;
+    width: auto;
+    padding: 1em;
+}
+
 
 .about h1 {
     text-align: center;
@@ -44,17 +53,10 @@
 }
 
 
-.aboutBg {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.733), rgba(188, 210, 219, 0.555));
-    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
-    display: flex;
-    margin: auto;
-    width: 80%;
-    padding: 1em;
-}
 
 .aboutText {
     margin-left: 4em;
+    width: 59%;
 }
 
 .aboutText h2 span {
