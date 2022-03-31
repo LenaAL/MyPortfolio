@@ -137,8 +137,9 @@
     }
 
     .aboutText {
-        margin-left: 1em;
+        margin: auto;
     }
+
 
     .about h1 {
         margin-top: 1.5em;
@@ -170,11 +171,6 @@
         max-width: 100%;
         height: auto;
 
-
-    }
-
-    .aboutText {
-        margin-left: .5em;
 
     }
 
