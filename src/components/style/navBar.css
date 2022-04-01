@@ -3,7 +3,6 @@
     background-image: linear-gradient(to left, rgba(207, 190, 218, 0.733), rgba(58, 142, 238, 0.555));
     padding: 2.5em;
     text-align: center;
-    box-shadow: rgb(160, 213, 235) 2px 6px 9px;
     position: fixed;
     width: 100vw;
     z-index: 100;
@@ -32,9 +31,7 @@
 
 .navBar {
     color: black;
-    font-family: Arial,
-        Helvetica,
-        sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin-right: 40px;
     font-size: 21px;

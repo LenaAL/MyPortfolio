@@ -13,7 +13,6 @@
 }
 
 
-/*vil ha en boks rund dem 3 tingern */
 .bgContainer h1,
 .bgContainer h2 {
     padding-left: 5%;
@@ -47,8 +46,8 @@
     left: 10%;
     align-self: center;
     display: inline-block;
-    border-radius: 10px;
-    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-image: linear-gradient(to left,#cfbedae7, #3a8eeee5) 1;
     background-color: rgba(134, 188, 233, 0.76);
     color: #000000;
     text-align: center;
@@ -57,7 +56,7 @@
     width: 250px;
     transition: all 0.5s;
     cursor: pointer;
-    box-shadow: rgb(174, 190, 197) 2px 6px 20px;
+    
 }
 
 .reflectBtn {
@@ -66,8 +65,8 @@
     left: 10%;
     align-self: center;
     display: inline-block;
-    border-radius: 10px;
-    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-image: linear-gradient(to left,#cfbedae7, #3a8eeee5) 1;
     background-color: rgba(134, 188, 233, 0.76);
     color: #000000;
     text-align: center;
@@ -76,7 +75,6 @@
     width: 250px;
     transition: all 0.5s;
     cursor: pointer;
-    box-shadow: rgb(174, 190, 197) 2px 6px 20px;
 }
 
 .aboutBtn {
@@ -85,8 +83,8 @@
     left: 10%;
     align-self: center;
     display: inline-block;
-    border-radius: 10px;
-    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-image: linear-gradient(to left,#cfbedae7, #3a8eeee5) 1;
     background-color: rgba(134, 188, 233, 0.76);
     color: #000000;
     text-align: center;
@@ -95,7 +93,6 @@
     width: 250px;
     transition: all 0.5s;
     cursor: pointer;
-    box-shadow: rgb(174, 190, 197) 2px 6px 20px;
 }
 
 .projectBtn span,
@@ -105,6 +102,7 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .projectBtn span:after,
@@ -130,13 +128,6 @@
 .aboutBtn:hover span:after {
     opacity: 1;
     right: 0;
-}
-
-.projectBtn:hover,
-.reflectBtn:hover,
-.aboutBtn:hover {
-    box-shadow: rgb(254, 254, 255) 2px 6px 20px;
-
 }
 
 

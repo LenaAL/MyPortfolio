@@ -52,8 +52,8 @@
 
 .projectContentCard {
     position: relative;
-    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.733), rgba(188, 210, 219, 0.555));
+    background-image: linear-gradient(to right, rgb(241, 241, 241), rgba(188, 210, 219, 0.555));
+    box-shadow: rgba(188, 210, 219, 0.555) 3px 7px 13px;
     padding: 22px;
     margin-left: 4%;
     margin-right: 4%;
@@ -87,15 +87,15 @@
     color: black;
 }
 
-/* lunks*/
+/* links*/
 .link {
-    color: rgb(41, 88, 219);
+    color: rgb(67, 88, 207);
     font-size: large;
     text-decoration: none;
 }
 
 #blue {
-    color: rgb(41, 88, 219) !important;
+    color: rgb(67, 88, 207)!important;
 }
 
 .linkContainer {
@@ -108,7 +108,7 @@
 
 
 .link:hover {
-    font-size: 19px;
+    text-decoration: underline;
 }
 
 
@@ -126,11 +126,6 @@
     .projectContentCard {
         margin: 10px;
         padding: 0 1px 0 1px;
-
-    }
-
-    .projectContentCard {
-        box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 10px;
 
     }
 

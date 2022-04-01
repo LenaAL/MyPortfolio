@@ -1,7 +1,6 @@
 .footer {
 
     background-image: linear-gradient(to left, rgba(207, 190, 218, 0.733), rgba(58, 142, 238, 0.555));
-    box-shadow: rgb(160, 213, 235) 2px -6px 9px;
     color: rgb(0, 0, 0);
     text-align: left;
 }

@@ -4,8 +4,8 @@
 }
 
 .aboutBg {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.733), rgba(188, 210, 219, 0.555));
-    box-shadow: rgba(30, 31, 31, 0.658) 5px 9px 15px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(188, 210, 219, 0.555));
+    box-shadow: rgba(186, 211, 214, 0.658) 3px 7px 13px;
     display: flex;
     margin: auto;
     width: auto;
@@ -42,7 +42,7 @@
 }
 
 .me {
-    box-shadow: rgba(30, 31, 31, 0.658) 3px 7px 13px;
+    box-shadow: rgba(255, 255, 255, 0.658) 3px 7px 13px;
     width: 500px;
     height: 450px;
 
@@ -79,7 +79,7 @@
     .aboutBg {
         padding-bottom: 1em;
         width: 100%;
-        background-color: white;
+        
     }
 
     #quoteA {
