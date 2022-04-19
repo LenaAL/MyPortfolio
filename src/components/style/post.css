@@ -96,6 +96,9 @@
     width: 100%;
 }
 
+.blockContent h3 {
+    color:rgba(26, 146, 194, 0.897);
+}
 
 @media screen and (max-width: 1900px) {
 

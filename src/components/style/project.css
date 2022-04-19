@@ -89,13 +89,13 @@
 
 /* links*/
 .link {
-    color: rgb(67, 88, 207);
+    color: rgba(26, 146, 194, 0.897);
     font-size: large;
     text-decoration: none;
 }
 
 #blue {
-    color: rgb(67, 88, 207)!important;
+    color: rgba(26, 146, 194, 0.897)!important;
 }
 
 .linkContainer {

@@ -80,12 +80,13 @@
     text-decoration: none;
     margin-left: 30px;
     color: black;
+    width: 5%;
     font-size: 20px;
     cursor: pointer;
 }
 
 .backBtn:hover {
-    color: rgba(58, 142, 238, 0.555);
+    color: rgba(26, 146, 194, 0.897)
 }
 
 @media screen and (max-width: 1000px) {
