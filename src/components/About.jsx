@@ -44,7 +44,7 @@ export default function About() {
                             <BlockContent blocks={author.bio} projectId="zzsf9mdk" dataset="production" />
                             <a href="https://drive.google.com/file/d/1Gl-okvY4uK_F5DhCm3eIvy9Z_lDfDMNd/view?usp=sharing"
                                 className="MinCV">
-                                <span>Min CV</span></a>
+                                <span>My CV</span></a>
                         </div>
                     </div>
                 </section>
