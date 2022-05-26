@@ -4,12 +4,16 @@
 }
 
 .aboutBg {
+    /*
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(188, 210, 219, 0.555));
     box-shadow: rgba(186, 211, 214, 0.658) 3px 7px 13px;
+    */
     display: flex;
     margin: auto;
     width: auto;
+    height: auto;
     padding: 1em;
+    padding-bottom: 30em;
 }
 
 
@@ -43,8 +47,8 @@
 
 .me {
     box-shadow: rgba(255, 255, 255, 0.658) 3px 7px 13px;
-    width: 450px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
 
 }
 
@@ -56,12 +60,11 @@
 
 .aboutText {
     margin-left: 4em;
-    width: 59%;
+    width: 100%;
 }
 
 .aboutText h2 span {
     color: rgb(0, 0, 0);
-    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
 
 }
 
@@ -69,10 +72,44 @@
     text-align: left;
     word-wrap: break-word;
     font-size: 17px;
-
-
+    width: 100%;
 }
 
+.MinCV {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(134, 188, 233, 0.76);
+    border: 2px solid #cfbedae7;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.MinCV span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.MinCV span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+.MinCV:hover span {
+    padding-right: 35px;
+}
+.MinCV:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 @media screen and (max-width:2000px) {
 
 
@@ -99,7 +136,7 @@
 
     .me {
         margin-top: .1em;
-        height: 400px;
+        
         text-align: left;
 
     }
@@ -129,8 +166,7 @@
     }
 
     .me {
-        width: 400px;
-        height: 400px;
+        
         overflow: hidden;
         border-radius: 100%;
         border: 2px solid rgba(58, 142, 238, 0.555);
@@ -183,5 +219,12 @@
         margin-left: 6em;
     }
 
+    .MinCV {
+        position: relative;
+        left: 40%;
+        top: 1em;
+    
+        
+    }
 
 }

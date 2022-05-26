@@ -40,7 +40,7 @@ export default function Project() {
                 <section className="projectGrid"> {project && project.map((project, index) => (
                     <article className="projectContentCard">
                         <h3 className="projectTitle"> <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer"> {project.title}</a> </h3>
-                        <div className="information"> <span> <strong>Finished on</strong>: {"  "}
+                        <div className="information"> <span> <strong>Finished</strong>: {"  "}
                             {new Date(project.date).toLocaleDateString()}
                         </span>
                             <p className="description"> {project.description}
@@ -51,9 +51,9 @@ export default function Project() {
                                     <strong>View Project</strong> {""}
                                 </a></p>
                                 <p>
-                                    <span id="blue" role="img" aria-label="right pointing arrow"><FaLongArrowAltRight />
+                                    {/*<span id="blue" role="img" aria-label="right pointing arrow"><FaLongArrowAltRight />
                                     </span>
-                                    <Link className="link" to={"/post/"}><strong>Read reflectation</strong></Link>
+                                   <Link className="link" to={"/post/"}><strong>Read reflectation</strong></Link>*/}
                                 </p>
                             </div>
                         </div>

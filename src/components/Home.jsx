@@ -9,7 +9,7 @@ export default function Home() {
         <main className="homeBg"> <img src={image} alt="Albus the bunny" className="img" />
             <div className="bgContainer">
                 <h1 className="text">Hi! I'm Lena Amdal-Larsen</h1>
-                <h2 className="undertext">Developer, Animal Lover, Sport Enthusiast and Gamer</h2>
+                <h2 className="undertext">Web Developer, Animal Lover, and Gamer</h2>
                 <NavLink to="/project"> <button className="projectBtn"><span>View my work</span></button> </NavLink>
                 <NavLink to="/post"> <button className="reflectBtn"><span>My Reflections</span></button> </NavLink>
                 <NavLink to="/about"> <button className="aboutBtn"><span>About Me</span></button> </NavLink>
