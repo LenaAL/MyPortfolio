@@ -30,7 +30,7 @@ export default function Post() {
     return (
         <>
             <main className="mainPost">
-                <h1 className="PostText">Reflectations</h1>
+                <h1 className="PostText">Reflections</h1>
                 <section className="containerPost">
                     <h3 id="quoteR">If you want to see the reflections I'v had on my work </h3>
                     <h3 id="indentR">You came to the right place!<span className="quoteBunny"><GiRabbitHead /></span></h3>
