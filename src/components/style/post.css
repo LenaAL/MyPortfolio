@@ -1,5 +1,13 @@
 .mainPost {
     margin: auto;
+    margin-bottom: 0;
+}
+
+.postTitle {
+    position: absolute;
+    right: 0em;
+    bottom: 0;
+    width: 100%;
 }
 
 .cardImgContainer {
@@ -26,20 +34,6 @@
     padding: 0;
 }
 
-
-#quoteR {
-    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
-    margin-left: 5em;
-
-}
-
-#indentR {
-    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
-    margin-left: 21em;
-
-
-}
-
 .PostText {
     font-size: 30px;
     text-align: center;
@@ -48,7 +42,6 @@
 }
 
 .PostText2 {
-
     font-size: medium;
     display: flex;
     justify-content: center;
@@ -75,8 +68,6 @@
     margin-bottom: 1rem;
     margin: auto;
     margin-top: 5rem;
-
-
 }
 
 .cards {
@@ -85,15 +76,6 @@
     margin-left: 1em;
     width: fit-content;
     height: fit-content;
-
-
-}
-
-.postTitle {
-    position: absolute;
-    right: 0em;
-    bottom: 0;
-    width: 100%;
 }
 
 .blockContent h3 {
@@ -108,20 +90,6 @@
 
     }
 
-
-    #quoteR {
-
-        margin-left: 20em;
-
-    }
-
-    #indentR {
-
-        margin-left: 37em;
-
-    }
-
-
 }
 
 @media screen and (max-width: 1300px) {
@@ -131,8 +99,6 @@
 
     .postGrid {
         grid-template-columns: 1fr;
-
-
     }
 
     .cardImgContainer {
@@ -146,43 +112,8 @@
         padding-right: 1em;
     }
 
-    #quoteR {
-
-        margin-left: 13em;
-
-    }
-
-    #indentR {
-
-        margin-left: 29em;
-
-    }
-
-
-
 }
 
-@media screen and (max-width: 1000px) {
-
-    #quoteR {
-        margin-left: 10em;
-    }
-
-    #indentR {
-        margin-left: 24em;
-    }
-}
-
-@media screen and (max-width: 750px) {
-
-    #quoteR {
-        margin-left: 9em;
-    }
-
-    #indentR {
-        margin-left: 20em;
-    }
-}
 
 @media screen and (max-width: 700px) {
     .cardImgContainer {
@@ -200,24 +131,12 @@
 
     }
 
-    #quoteR {
-        margin-left: 4em;
-    }
-
-    #indentR {
-        margin-left: 20em;
-    }
-
-
 }
 
 @media screen and (max-width: 630px) {
 
-    #quoteR {
-        margin-left: 3em;
-    }
 
-    #indentR {
-        margin-left: 6em;
+    .PostText {
+        margin-top: -.5em;
     }
 }

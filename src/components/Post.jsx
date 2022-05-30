@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SanityClient from "../client.js";
 import Footer from "./Footer";
-import { GiRabbitHead } from "react-icons/gi";
 
 
 export default function Post() {
@@ -32,8 +31,7 @@ export default function Post() {
             <main className="mainPost">
                 <h1 className="PostText">Reflections</h1>
                 <section className="containerPost">
-                    <h3 id="quoteR">If you want to see the reflections I'v had on my work </h3>
-                    <h3 id="indentR">You came to the right place!<span className="quoteBunny"><GiRabbitHead /></span></h3>
+
                     <div className="postGrid">
                         {post && post.map((post, index) => (
                             <article className="box">

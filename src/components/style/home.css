@@ -1,23 +1,22 @@
 .homeBg {
-    padding-top: 11vh !important;
+    position: relative;
 }
 
 .img {
     width: 100%;
     height: 100%;
     position: fixed;
+    top:0;
     object-fit: cover;
-    background-color: black;
-    overflow: hidden !important;
-
+    overflow: hidden;
 }
 
 
 .bgContainer h1,
 .bgContainer h2 {
-    padding-left: 5%;
     width: fit-content;
-    overflow: hidden !important;
+    top: .5em;
+    overflow: hidden;
 }
 
 .text {
@@ -26,8 +25,7 @@
     font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
     width: 100%;
     position: relative;
-
-
+    left: 1.5em;
 }
 
 .undertext {
@@ -37,8 +35,17 @@
     width: 100%;
     position: relative;
     top: -1em;
+    left: 5em;
 }
 
+.buttonContainer {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    margin: auto;
+    left: 9.5em;
+    right: auto;
+}
 
 .projectBtn {
     position: absolute;
@@ -136,11 +143,9 @@
     .homeBg {
         padding-top: 10vh !important;
     }
-
 }
 
 @media screen and (max-width: 750px) {
-
 
     .projectBtn,
     .reflectBtn,

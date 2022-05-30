@@ -1,26 +1,21 @@
 .singlePContainer {
-    /*border: 1px solid rgb(134, 188, 233);*/
     padding-top: 11vh !important;
 }
 
 .singePArticle {
-    background-color: rgba(207, 190, 218, 0.733);
     color: black;
     margin: auto;
     text-align: center;
-    border-radius: 2px;
-    border-bottom-left-radius: 500px 100px;
-    border-bottom-right-radius: 500px 100px;
+    border-bottom: 5px solid rgba(58, 142, 238, 0.555);
+    width: 60%;
+    
 }
 
 .blockContainer {
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgb(160, 213, 235) 2px 6px 9px;
     border-radius: 1px;
     margin: auto;
     margin-bottom: 5%;
-    margin-top: 2%;
-    width: 60%;
+    width: 70%;
     padding: 10px;
 }
 
@@ -34,7 +29,7 @@
 
 .titleCard {
     border-radius: 12px;
-    height: 40%;
+    height: 45%;
     margin-top: 2%;
     padding: 0 20px;
     width: fit-content;
@@ -62,8 +57,6 @@
     padding: 16px;
     margin-top: 10px;
     margin-left: 20px;
-    border-bottom: 4px solid black;
-    border-top: 4px solid black;
 }
 
 .blockContent p {
@@ -71,14 +64,19 @@
     padding-right: 6em;
 }
 
+.blockContent h2 {
+    padding-left: 3.4em;
+}
+
 .blockContent h3 {
-    padding-left: 5em;
+    padding-left: 5.1em;
 }
 
 /*back button*/
 .backBtn {
     text-decoration: none;
     margin-left: 30px;
+    margin-top: 30px;
     color: black;
     width: 5%;
     font-size: 20px;
@@ -100,17 +98,27 @@
     }
 
     .singlePContainer {
-        /*border: 1px solid rgb(134, 188, 233);*/
         padding-top: 11vh !important;
     }
 
     .blockContent h3 {
         padding-left: .9em;
     }
+    
+    .blockContent h2 {
+    padding-left: 0;
+}
 
-    .blockContainer {
+    .blockContainer { 
         width: 90%;
     }
 
-
 }
+
+@media screen and (max-width: 500px) { 
+    .backBtn {
+        display: none;
+    }
+}
+
+ 

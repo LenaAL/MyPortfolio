@@ -1,7 +1,6 @@
 .mainProjectContainer {
     padding: 12px;
-    min-height: auto;
-    margin-bottom: 20em;
+    margin-bottom: 10em;
 }
 
 .projectSection {
@@ -14,16 +13,6 @@
     display: flex;
     justify-content: center;
     font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif
-}
-
-#quoteP {
-    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
-    margin-left: 2em;
-}
-
-#indentP {
-    font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
-    margin-left: 10.5em;
 }
 
 .pageSub {
@@ -88,16 +77,6 @@
 }
 
 /* links*/
-.link {
-    color: rgba(26, 146, 194, 0.897);
-    font-size: large;
-    text-decoration: none;
-}
-
-#blue {
-    color: rgba(26, 146, 194, 0.897)!important;
-}
-
 .linkContainer {
     display: flex;
 }
@@ -107,8 +86,14 @@
 }
 
 
-.link:hover {
-    text-decoration: underline;
+.linkToProjects:hover {
+    font-size: 19px;
+}
+
+.linkToProjects {
+    color: rgba(26, 146, 194, 0.897);
+    font-size: large;
+    text-decoration: none;
 }
 
 
@@ -126,7 +111,6 @@
     .projectContentCard {
         margin: 10px;
         padding: 0 1px 0 1px;
-
     }
 
 }
@@ -144,14 +128,9 @@
 }
 
 @media screen and (max-width: 650px) {
-    #quoteP {
 
-        margin-left: 1em;
-    }
-
-    #indentP {
-
-        margin-left: 4em;
+    .pageTitle {
+        margin-top: -.5em;
     }
 
 }

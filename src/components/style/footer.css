@@ -1,5 +1,4 @@
 .footer {
-
     background-image: linear-gradient(to left, rgba(207, 190, 218, 0.733), rgba(58, 142, 238, 0.555));
     color: rgb(0, 0, 0);
     text-align: left;
@@ -35,7 +34,7 @@
     font-size: 20px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 550px) {
     .footer div {
         grid-template-columns: 1fr;
     }

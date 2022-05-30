@@ -40,6 +40,7 @@ export default function SinglePost() {
 
     return <>
         <main className="singlePContainer">
+            <div onClick={() => navigate(-1)} className="backBtn"><FaArrowLeft /></div>
             <article className="singePArticle">
                 <header>
                     <div className="singlePitem">
@@ -52,13 +53,11 @@ export default function SinglePost() {
                     </div>
                 </header>
             </article>
-            <div onClick={() => navigate(-1)} className="backBtn"><FaArrowLeft /></div>
+
             <article className="blockContainer">
                 <div className="blockContent"><BlockContent blocks={SinglePost.body} projectId="zzsf9mdk" dataset="production" /></div>
             </article>
         </main>
-
-
         <Footer />
     </>
 }
