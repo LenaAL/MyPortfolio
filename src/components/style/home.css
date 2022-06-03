@@ -25,7 +25,7 @@
     font-family: 'Sansita Swashed', cursive, Arial, Helvetica, sans-serif;
     width: 100%;
     position: relative;
-    left: 1.5em;
+    margin-left: 1.5em;
 }
 
 .undertext {
@@ -35,7 +35,7 @@
     width: 100%;
     position: relative;
     top: -1em;
-    left: 5em;
+    margin-left: 5em;
 }
 
 .buttonContainer {
@@ -138,19 +138,44 @@
 }
 
 
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 820px) {
     .homeBg {
-        padding-top: 10vh !important;
-    }
+ width: 100%;
 }
 
-@media screen and (max-width: 750px) {
+.projectBtn {
 
+        top: 19em;
+         overflow-x: hidden
+
+    }
+
+    .reflectBtn {
+
+        top: 24em;
+         overflow-x: hidden
+        
+
+    }
+
+    .aboutBtn {
+
+        top: 21.5em;
+         overflow-x: hidden
+
+    }
+
+}
+    
+
+
+
+@media screen and (max-width: 650px) {
     .projectBtn,
     .reflectBtn,
     .aboutBtn {
-        left: 50%;
+        position: relative;
+        left: 25%;
         transform: translateX(-50%);
     }
 
@@ -166,14 +191,24 @@
 
     .reflectBtn {
 
-        top: 26em;
+        top: 20.5em;
+        
 
     }
 
     .aboutBtn {
 
-        top: 23em;
+        top: 21em;
 
     }
+    .text {
+    text-align: center;
+    margin-left: 0;
+}
+
+.undertext {
+    
+    margin: auto;
+}
 
 }
