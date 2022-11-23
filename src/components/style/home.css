@@ -175,7 +175,7 @@
     .reflectBtn,
     .aboutBtn {
         position: relative;
-        left: 25%;
+        left: 35%;
         transform: translateX(-50%);
     }
 
