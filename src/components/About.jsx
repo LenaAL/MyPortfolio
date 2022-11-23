@@ -38,7 +38,7 @@ export default function About() {
                         <h2><span>Hi I'm Lena Amdal-Larsen</span></h2>
                         <div className="aboutBlockContent">
                             <BlockContent blocks={author.bio} projectId="zzsf9mdk" dataset="production" />
-                            <a href="https://lenaal.tiiny.site/"
+                            <a href="https://docs.google.com/document/d/1DM2DOTAlSX1d2q6at7DxKqwreCxNCw7M/edit?usp=sharing&ouid=105287780361346715147&rtpof=true&sd=true"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="MinCV">
