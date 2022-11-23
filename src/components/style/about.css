@@ -39,6 +39,7 @@
 
 .aboutText h2 span {
     color: rgb(0, 0, 0);
+    font-size: 16px; /*ENDRET DETTE, VAR INGENTING*/
 }
 
 .aboutBlockContent {
