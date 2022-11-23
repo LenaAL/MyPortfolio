@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import image from '../img/dmytro-tolokonov-Jq3WI9IQgEs-unsplash (1).jpg';
+import image from '../img/dmytro-tolokonov-Jq3WI9IQgEs-unsplash.jpg';
 
 
 
