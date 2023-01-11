@@ -7,7 +7,6 @@ export default function Footer() {
             <div> <strong>Contact me:</strong>
                 <p><span className="footerIcon"><FaRegEnvelope /></span> <a href="mailto: Lenaamdallarsen@gmail.com">Lenaamdallarsen@gmail.com</a></p>
                 <p><span className="footerIcon"><FaLinkedin /></span> <a href="https://www.linkedin.com/in/lena-amdal-larsen-240b08234/">Lena Amdal-Larsen</a></p>
-                <p><span className="footerIcon"><FaTwitter /></span> @xLenaAL</p>
             </div>
             <div>
                 <strong>
